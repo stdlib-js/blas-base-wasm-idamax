@@ -35,32 +35,20 @@ limitations under the License.
 
 > Find the index of the first element having the maximum absolute value.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/blas-base-idamax-wasm
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var idamax = require( '@stdlib/blas-base-idamax-wasm' );
+import idamax from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-idamax-wasm@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-idamax-wasm@deno/mod.js';
 ```
 
 #### idamax.main( N, x, strideX )
@@ -68,7 +56,7 @@ var idamax = require( '@stdlib/blas-base-idamax-wasm' );
 Finds the index of the first element having the maximum absolute value.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 
@@ -85,7 +73,7 @@ The function has the following parameters:
 The `N` and stride parameters determine which elements in the input strided array are accessed at runtime. For example, to traverse every other value,
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 
@@ -98,7 +86,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 // Initial array:
 var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
@@ -116,7 +104,7 @@ var idx = idamax.main( 3, x1, 2 );
 Finds the index of the first element having the maximum absolute value using alternative indexing semantics.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 
@@ -131,7 +119,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to start from the second index,
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var x = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
@@ -150,7 +138,7 @@ Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-var Memory = require( '@stdlib/wasm-memory' );
+import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@deno/mod.js';
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -173,8 +161,8 @@ Finds the index of the first element having the maximum absolute value.
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-var Memory = require( '@stdlib/wasm-memory' );
-var oneTo = require( '@stdlib/array-one-to' );
+import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@deno/mod.js';
+import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -219,8 +207,8 @@ Finds the index of the first element having the maximum absolute value using alt
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-var Memory = require( '@stdlib/wasm-memory' );
-var oneTo = require( '@stdlib/array-one-to' );
+import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@deno/mod.js';
+import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@deno/mod.js';
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -283,8 +271,8 @@ The function has the following additional parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var idamax = require( '@stdlib/blas-base-idamax-wasm' );
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
+import idamax from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-idamax-wasm@deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
@@ -317,7 +305,7 @@ console.log( idx );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -386,13 +374,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/deno
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/deno
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/deno
 
-[@stdlib/blas/base/idamax]: https://github.com/stdlib-js/blas-base-idamax
+[@stdlib/blas/base/idamax]: https://github.com/stdlib-js/blas-base-idamax/tree/deno
 
 </section>
 
