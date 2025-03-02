@@ -38,19 +38,19 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/idamax-wasm"
-%% click B href "https://github.com/stdlib-js/blas-base-idamax-wasm/tree/main"
-%% click C href "https://github.com/stdlib-js/blas-base-idamax-wasm/tree/production"
-%% click D href "https://github.com/stdlib-js/blas-base-idamax-wasm/tree/esm"
-%% click E href "https://github.com/stdlib-js/blas-base-idamax-wasm/tree/deno"
-%% click F href "https://github.com/stdlib-js/blas-base-idamax-wasm/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/wasm/idamax"
+%% click B href "https://github.com/stdlib-js/blas-base-wasm-idamax/tree/main"
+%% click C href "https://github.com/stdlib-js/blas-base-wasm-idamax/tree/production"
+%% click D href "https://github.com/stdlib-js/blas-base-wasm-idamax/tree/esm"
+%% click E href "https://github.com/stdlib-js/blas-base-wasm-idamax/tree/deno"
+%% click F href "https://github.com/stdlib-js/blas-base-wasm-idamax/tree/umd"
 ```
 
-[stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/idamax-wasm
-[production-url]: https://github.com/stdlib-js/blas-base-idamax-wasm/tree/production
-[deno-url]: https://github.com/stdlib-js/blas-base-idamax-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-idamax-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-idamax-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-idamax-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-idamax-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-idamax-wasm/blob/esm/README.md
+[stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/wasm/idamax
+[production-url]: https://github.com/stdlib-js/blas-base-wasm-idamax/tree/production
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-idamax/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-idamax/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-idamax/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-idamax/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-idamax/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-idamax/blob/esm/README.md

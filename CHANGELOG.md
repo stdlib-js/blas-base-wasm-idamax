@@ -4,13 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-26)
+## Unreleased (2025-03-02)
 
 <section class="features">
 
 ### Features
 
--   [`8f8b649`](https://github.com/stdlib-js/stdlib/commit/8f8b6497126fee0256de7be78a9501edd37c70fb) - add `blas/base/idamax-wasm` [(#3016)](https://github.com/stdlib-js/stdlib/pull/3016)
+-   [`caf2c7e`](https://github.com/stdlib-js/stdlib/commit/caf2c7e956b6edf338ed9e59a295f8f776b26230) - add `blas/base/wasm/idamax`
 
 </section>
 
@@ -22,11 +22,8 @@
 
 <details>
 
--   [`5950b02`](https://github.com/stdlib-js/stdlib/commit/5950b0290ff5c39e518f70e6f3bdbef1dea31cd1) - **docs:** fix comments _(by Athan Reines)_
--   [`c8b03cb`](https://github.com/stdlib-js/stdlib/commit/c8b03cb5ef49064325b8859de640833ee715ab20) - **docs:** fix comments _(by Athan Reines)_
--   [`91e37be`](https://github.com/stdlib-js/stdlib/commit/91e37be0fc89c072ee006802d5a568eab3003c9a) - **docs:** fix missing license headers _(by Athan Reines)_
--   [`90b36a5`](https://github.com/stdlib-js/stdlib/commit/90b36a5f3e5493be4427cbfdbd4ed6abc083f6fc) - **build:** update compiler flags and export resolution _(by Athan Reines)_
--   [`8f8b649`](https://github.com/stdlib-js/stdlib/commit/8f8b6497126fee0256de7be78a9501edd37c70fb) - **feat:** add `blas/base/idamax-wasm` [(#3016)](https://github.com/stdlib-js/stdlib/pull/3016) _(by Aman Bhansali, Athan Reines)_
+-   [`8a80a81`](https://github.com/stdlib-js/stdlib/commit/8a80a811f4c4d710106c73b6381fe0d3ed2ab901) - **build:** generalize scripts to auto-update copyright year _(by Athan Reines)_
+-   [`caf2c7e`](https://github.com/stdlib-js/stdlib/commit/caf2c7e956b6edf338ed9e59a295f8f776b26230) - **feat:** add `blas/base/wasm/idamax` _(by Athan Reines)_
 
 </details>
 
@@ -38,9 +35,8 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 1 person contributed to this release. Thank you to this contributor:
 
--   Aman Bhansali
 -   Athan Reines
 
 </section>
